@@ -44,6 +44,9 @@
     </header>
 
     <main class="sectionAsideSection">
+
+        <!--    Partie Presentation du Site   -->
+
         <section id="slider">
             <div class="container">
                 <h1>Réservez le menu qui vous convient</h1>
@@ -55,6 +58,8 @@
                 </div>
             </div>
         </section>
+
+        <!--    Partie Fonctionnement   -->
 
         <aside id="fonctionnement">
             <h2>Fonctionnement</h2>
@@ -82,12 +87,14 @@
             </div>
         </aside>
 
+        <!--    Partie Restaurant   -->
+
         <section id="restaurant">
             <h2>Restaurant</h2>
             <div class="container">
                 <a href="pages/la_palette_du_gout.html">
                     <figure class="carte_restaurant">
-                        <div class="nouveau">
+                        <div class="photo_restaurant nouveau">
                             <div class="mention_nouveaute">Nouveau</div>
 
                             <img src="src/images/restaurants/la_palette_du_gout.jpg"
@@ -100,29 +107,86 @@
 
                                 <p>Ménilmontant</p>
                             </div>
-
+                            
+                            <!-- icone favoris à rajouter -->
                             <div class="icone icone_favoris"></div>
                         </figcaption>
                     </figure>
                 </a>
 
                 <a href="pages/la_note_enchantee.html">
-                    <figure class="carte_restaurant"></figure>
+                    <figure class="carte_restaurant">
+                        <div class="photo_restaurant nouveau">
+                            <div class="mention_nouveaute">Nouveau</div>
+
+                            <img src="src/images/restaurants/la_note_enchantee.jpg"
+                                alt="Image du restaurant La note enchantée" title="Voir plus">
+                        </div>
+
+                        <figcaption class="description_restaurant">
+                            <div class="info_restaurant">
+                                <h3>La note enchantée</h3>
+
+                                <p>Charonne</p>
+                            </div>
+
+                                <!-- icone favoris à rajouter -->
+                            <div class="icone icone_favoris"></div>
+                        </figcaption>
+                    </figure>
                 </a>
 
                 <a href="pages/a_la_francaise.html">
-                    <figure class="carte_restaurant"></figure>
+                    <figure class="carte_restaurant">
+                        <div class="photo_restaurant">
+                            <img src="src/images/restaurants/a_la_francaise.jpg"
+                                alt="Image du restaurant À la française" title="Voir plus">
+                        </div>
+
+                        <figcaption class="description_restaurant">
+                            <div class="info_restaurant">
+                                <h3>À la française</h3>
+
+                                <p>Cité Rouge</p>
+                            </div>
+
+                                <!-- icone favoris à rajouter -->
+                            <div class="icone icone_favoris"></div>
+                        </figcaption>
+                    </figure>
                 </a>
 
                 <a href="pages/le_delice_des_sens.html">
-                    <figure class="carte_restaurant"></figure>
+                    <figure class="carte_restaurant">
+                        <div class="photo_restaurant">
+                            <img src="src/images/restaurants/le_delice_des_sens.jpg"
+                                alt="Image du restaurant Le délice des sens" title="Voir plus">
+                        </div>
+
+                        <figcaption class="description_restaurant">
+                            <div class="info_restaurant">
+                                <h3>Le délice des sens</h3>
+
+                                <p>Folie-Méricourt</p>
+                            </div>
+
+                            <!-- icone favoris à rajouter -->
+                            <div class="icone icone_favoris"></div>
+                        </figcaption>
+                    </figure>
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footerlist">
         <h3 class="titre_footer">ohmyfood</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-utensils"></i><h4>Proposer un restaurant</h4></a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i><h4>Devenir partenaire</h4></a></li>
+            <li><a href="#"><p>Mentions légales</p></a></li>
+            <li><a href="mailto:contact@ohmyfood.com"><p>Contact</p></a></li>
+        </ul>
     </footer>
 </body>
 
