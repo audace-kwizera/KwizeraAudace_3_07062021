@@ -1,0 +1,13 @@
+#slider {
+    @include flex_column_center;
+    background-color: #F2F2F2;
+}
+
+.slider_container {
+    @include flex_column_center;
+    text-align: center;
+    padding: 2rem;
+    &_slogan {
+        margin-bottom: 1rem;
+    }
+}
