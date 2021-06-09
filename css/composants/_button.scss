@@ -9,4 +9,30 @@
     background: $couleur-bouton;
     color: white;
     font-size: 0.9rem;
+
+    &_fonctionnement_container {
+        @include flex_row_center;
+    }
+
+    &_numero {
+        background-color: #9356DC;
+        padding: 0.5rem;
+        border-radius: 50%;
+        margin: 0.1rem;
+        height: 1.1rem;
+        top: 2rem;
+        left: 0.9rem;
+        position: relative;
+        z-index: 1;
+    }   
+
+    &_fonctionnement {
+        padding: 1.8rem;
+        border-radius: 30px;
+        width: 100%;
+        margin: 0.7rem 0.5rem 0.7rem 0;
+        font-size: 1.2rem;
+        color: black;
+        background: darken($couleur-clair, 4);
+    }
 }
