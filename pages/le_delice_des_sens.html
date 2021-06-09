@@ -1,31 +1,238 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Le délice des sens</title>
-    
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-        <!-- Installation de Fontawesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
-        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-            integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
-            crossorigin="anonymous"></script>
-    
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
-            rel="stylesheet">
-    
-    </head>
+<html lang="fr">
 
-    <body>
-        
-    </body>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le délice des sens</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Installation de Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="entete_page">
+            <div class="icone icone_retour">
+                <a href="../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="logo">
+                <a class="lien_logo" href="../index.html">
+                    <img src="../src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="slider">
+            <img src="../src/images/restaurants/le_delice_des_sens.jpg" alt="Photo du restaurant À la française">
+        </div>
+
+        <section id="menu">
+            <div class="nom_restaurant">
+                <h2>Le délice des sens</h2>
+                <!-- icone favoris à rajouter -->
+                <div class="icone icone_favoris"></div>
+            </div>
+
+            <article>
+                <h3>Entrées</h3>
+
+                <div class="container container_menu">
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Tartare de thon</h4>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>25€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Bouchée de homard croustillant </h4>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>35€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Velouté de cèpes </h4>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>20€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>Plats</h3>
+
+                <div class="container container_menu">
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Poulet rôti aux herbes de Provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>40€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Langouste rôtie</h4>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>35€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Côte de boeuf Angus</h4>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>44€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>Desserts</h3>
+
+                <div class="container container_menu">
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Farandole de desserts</h4>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>18€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Crème brulée</h4>
+                                <p>Revisité</p>
+                            </div>
+
+                            <div class="prix_selection">
+                                <h5>22€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bouton_menu_restaurant">
+                        <a href="#" class="lien_menu_restaurant">
+                            <div class="description_menu_restaurant">
+                                <h4>Tiramisu </h4>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="prix_selection">
+                                <h5>23€</h5>
+                                <div class="selection">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <button class="btn">Commander</button>
+        </section>
+
+
+    </main>
+
+    <footer class="footerlist">
+        <h4 class="titre_footer">ohmyfood</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-utensils"></i>
+                    <h5>Proposer un restaurant</h5>
+                </a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i>
+                    <h5>Devenir partenaire</h5>
+                </a></li>
+            <li><a href="#">
+                    <p>Mentions légales</p>
+                </a></li>
+            <li><a href="mailto:contact@ohmyfood.com">
+                    <p>Contact</p>
+                </a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
