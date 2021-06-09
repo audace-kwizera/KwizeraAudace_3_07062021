@@ -7,7 +7,23 @@ $police_logo_titre: 'Shrikhand', cursive;
 $police_texte: 'Roboto', sans-serif;
 
 
-/*  Couleurs    */
+/*  Couleurs de la Charte    */
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+
+/*  Autres couleurs */
+$couleur-clair: #F2F2F2;
+$white: #CCC;
+
+/*  Responsive Breakpoint  */
+
+$small-smartphone: 320px;
+$medium-smartphone: 360px;
+$large-smartphon: 400px;
+$small-tablet: 480px;
+$medium-tablet: 540px;
+$large-tablette: 820px;
+$small-desktop: 1024px;
+$medium-desktop: 1280px;
+$large-desktop: 1440px;
