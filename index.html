@@ -28,9 +28,11 @@
 <body>
     <header>
         <div class="entete">
-            <a class="logo" href="index.html">
-                <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
-            </a>
+            <div class="entete_logo">
+                <a class="logo" href="index.html">
+                    <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
+                </a>
+            </div>
 
             <div class="container ville_container">
                 <div class="icone icone_ville">
@@ -43,7 +45,7 @@
         </div>
     </header>
 
-    <main class="sectionAsideSection">
+    <main id="sectionAsideSection">
 
         <!--    Partie Presentation du Site   -->
 
@@ -53,9 +55,7 @@
 
                 <div class="slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins</div>
 
-                <button class="btn">
-                    <p>Explorer nos restaurants</p>
-                </button>
+                <button class="btn">Explorer nos restaurants</button>
             </div>
         </section>
 
@@ -66,22 +66,25 @@
 
             <div class="container">
                 <div class="btn_fonctionnement_container">
-                    <button class="btn btn_fonctionnement">
-                        <div class="numero">1</div>
-                        <div class="icone icone_btn_fontionnement"><i class="fas fa-mobile-alt"></i></div>
-                        <p>Choisissez un restaurant</p>
-                    </button>
+                    <div class="numero"><p>1</p></div>
 
                     <button class="btn btn_fonctionnement">
-                        <div class="numero">2</div>
-                        <div class="icone icone_btn_fontionnement"><i class="fas fa-list-ul"></i></div>
-                        <p>Composez votre menu</p>
+                        <i class="icone icone_btn_fontionnement fas fa-mobile-alt"></i>
+                        Choisissez un restaurant
                     </button>
 
+                    <div class="numero">2</div>
+
                     <button class="btn btn_fonctionnement">
-                        <div class="numero">3</div>
-                        <div class="icone icone_btn_fontionnement"><i class="fas fa-store"></i></div>
-                        <p>Dégustez au restaurant</p>
+                        <i class="icone icone_btn_fontionnement fas fa-list-ul"></i>
+                        Composez votre menu
+                    </button>
+
+                    <div class="numero">3</div>
+
+                    <button class="btn btn_fonctionnement">
+                        <i class="icone icone_btn_fontionnement fas fa-store"></i>
+                        Dégustez au restaurant
                     </button>
                 </div>
             </div>
@@ -107,7 +110,7 @@
 
                                 <p>Ménilmontant</p>
                             </div>
-                            
+
                             <!-- icone favoris à rajouter -->
                             <div class="icone icone_favoris"></div>
                         </figcaption>
@@ -130,7 +133,7 @@
                                 <p>Charonne</p>
                             </div>
 
-                                <!-- icone favoris à rajouter -->
+                            <!-- icone favoris à rajouter -->
                             <div class="icone icone_favoris"></div>
                         </figcaption>
                     </figure>
@@ -150,7 +153,7 @@
                                 <p>Cité Rouge</p>
                             </div>
 
-                                <!-- icone favoris à rajouter -->
+                            <!-- icone favoris à rajouter -->
                             <div class="icone icone_favoris"></div>
                         </figcaption>
                     </figure>
@@ -180,12 +183,20 @@
     </main>
 
     <footer class="footerlist">
-        <h3 class="titre_footer">ohmyfood</h3>
+        <h4 class="titre_footer">ohmyfood</h4>
         <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i><h4>Proposer un restaurant</h4></a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i><h4>Devenir partenaire</h4></a></li>
-            <li><a href="#"><p>Mentions légales</p></a></li>
-            <li><a href="mailto:contact@ohmyfood.com"><p>Contact</p></a></li>
+            <li><a href="#"><i class="fas fa-utensils"></i>
+                    <h5>Proposer un restaurant</h5>
+                </a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i>
+                    <h5>Devenir partenaire</h5>
+                </a></li>
+            <li><a href="#">
+                    <p>Mentions légales</p>
+                </a></li>
+            <li><a href="mailto:contact@ohmyfood.com">
+                    <p>Contact</p>
+                </a></li>
         </ul>
     </footer>
 </body>
