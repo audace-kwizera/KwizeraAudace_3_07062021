@@ -27,158 +27,152 @@
 
 <body>
     <header>
-        <div class="entete">
-            <div class="entete_logo">
-                <a class="logo" href="index.html">
-                    <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
-                </a>
-            </div>
-
-            <div class="container ville_container">
-                <div class="icone ville_container_icone">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="ville">
-                    <p class="ville_resultat">Paris, Belleville</p>
-                </div>
-            </div>
-        </div>
+        <a class="logo" href="index.html">
+            <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
+        </a>
     </header>
 
-    <main id="sectionAsideSection">
+    <main>
 
         <!--    Partie Presentation du Site   -->
 
+        <div class="container ville__container">
+            <i class="fas fa-map-marker-alt"></i>
+        
+            <h2>Paris, Belleville</h2>
+        </div>
+
         <section id="slider">
-            <div class="slider_container">
+            <div class="container slider__container">
                 <h1>Réservez le menu qui vous convient</h1>
 
-                <div class="slider_container_slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins</div>
+                <div class="slider__slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins</div>
 
-                <button class="btn">Explorer nos restaurants</button>
+                <button class="btn slider__bouton">Explorer nos restaurants</button>
             </div>
         </section>
 
         <!--    Partie Fonctionnement   -->
 
-        <aside id="fonctionnement">
+        <section id="fonctionnement">
             <h2>Fonctionnement</h2>
 
-            <div class="container">
-                <div class="btn_fonctionnement_container">
-                    <div class="btn_numero">1</div>
+            <div class="container fonctionnement__section">
+                <div class="fonctionnement__container">
+                    <div class="fonctionnement__numero">1</div>
 
-                    <button class="btn btn_fonctionnement">
-                        <i class="icone btn_fontionnement_icone fas fa-mobile-alt"></i>
+                    <button class="btn fonctionnement__btn">
+                        <i class="icone fontionnement__icone fas fa-mobile-alt"></i>
                         Choisissez un restaurant
                     </button>
                 </div>
                 
-                <div class="btn_fonctionnement_container">
-                    <div class="btn_numero">2</div>
+                <div class="fonctionnement__container">
+                    <div class="fonctionnement__numero">2</div>
 
-                    <button class="btn btn_fonctionnement">
-                        <i class="icone btn_fontionnement_icone fas fa-list-ul"></i>
+                    <button class="btn fonctionnement__btn">
+                        <i class="icone fontionnement__icone fas fa-list-ul"></i>
                         Composez votre menu
                     </button>
                 </div>
 
-                <div class="btn_fonctionnement_container">
-                    <div class="btn_numero">3</div>
+                <div class="fonctionnement__container">
+                    <div class="fonctionnement__numero">3</div>
 
-                    <button class="btn btn_fonctionnement">
-                        <i class="icone btn_fontionnement_icone fas fa-store"></i>
+                    <button class="btn fonctionnement__btn">
+                        <i class="icone fontionnement__icone fas fa-store"></i>
                         Dégustez au restaurant
                     </button>
                 </div>
             </div>
-        </aside>
+        </section>
 
         <!--    Partie Restaurant   -->
 
         <section id="restaurant">
             <h2>Restaurant</h2>
-            <div class="container">
+
+            <div class="container restaurant__section">
                 <a href="pages/la_palette_du_gout.html">
-                    <figure class="carte_restaurant">
-                        <div class="photo_restaurant nouveau">
-                            <div class="mention_nouveaute">Nouveau</div>
+                    <figure class="restaurant__carte">
+                        <div class="restaurant__photo nouveau">
+                            <div class="mention__nouveaute">Nouveau</div>
 
                             <img src="src/images/restaurants/la_palette_du_gout.jpg"
                                 alt="Image du restaurant La palette du goût" title="Voir plus">
                         </div>
 
-                        <figcaption class="description_restaurant">
-                            <div class="info_restaurant">
+                        <figcaption class="restaurant__description">
+                            <div class="restaurant__info">
                                 <h3>La palette du goût</h3>
 
                                 <p>Ménilmontant</p>
                             </div>
 
                             <!-- icone favoris à rajouter -->
-                            <div class="icone icone_favoris"></div>
+                            <div class="icone favoris__icone"></div>
                         </figcaption>
                     </figure>
                 </a>
 
                 <a href="pages/la_note_enchantee.html">
-                    <figure class="carte_restaurant">
-                        <div class="photo_restaurant nouveau">
-                            <div class="mention_nouveaute">Nouveau</div>
+                    <figure class="restaurant__carte">
+                        <div class="restaurant__photo nouveau">
+                            <div class="mention__nouveaute">Nouveau</div>
 
                             <img src="src/images/restaurants/la_note_enchantee.jpg"
                                 alt="Image du restaurant La note enchantée" title="Voir plus">
                         </div>
 
-                        <figcaption class="description_restaurant">
-                            <div class="info_restaurant">
+                        <figcaption class="restaurant__description">
+                            <div class="restaurant__info">
                                 <h3>La note enchantée</h3>
 
                                 <p>Charonne</p>
                             </div>
 
                             <!-- icone favoris à rajouter -->
-                            <div class="icone icone_favoris"></div>
+                            <div class="icone favoris__icone"></div>
                         </figcaption>
                     </figure>
                 </a>
 
                 <a href="pages/a_la_francaise.html">
-                    <figure class="carte_restaurant">
-                        <div class="photo_restaurant">
+                    <figure class="restaurant__carte">
+                        <div class="restaurant__photo">
                             <img src="src/images/restaurants/a_la_francaise.jpg"
                                 alt="Image du restaurant À la française" title="Voir plus">
                         </div>
 
-                        <figcaption class="description_restaurant">
-                            <div class="info_restaurant">
+                        <figcaption class="restaurant__description">
+                            <div class="restaurant__info">
                                 <h3>À la française</h3>
 
                                 <p>Cité Rouge</p>
                             </div>
 
                             <!-- icone favoris à rajouter -->
-                            <div class="icone icone_favoris"></div>
+                            <div class="icone favoris__icone"></div>
                         </figcaption>
                     </figure>
                 </a>
 
                 <a href="pages/le_delice_des_sens.html">
-                    <figure class="carte_restaurant">
-                        <div class="photo_restaurant">
+                    <figure class="restaurant__carte">
+                        <div class="restaurant__photo">
                             <img src="src/images/restaurants/le_delice_des_sens.jpg"
                                 alt="Image du restaurant Le délice des sens" title="Voir plus">
                         </div>
 
-                        <figcaption class="description_restaurant">
-                            <div class="info_restaurant">
+                        <figcaption class="restaurant__description">
+                            <div class="restaurant__info">
                                 <h3>Le délice des sens</h3>
 
                                 <p>Folie-Méricourt</p>
                             </div>
 
                             <!-- icone favoris à rajouter -->
-                            <div class="icone icone_favoris"></div>
+                            <div class="icone favoris__icone"></div>
                         </figcaption>
                     </figure>
                 </a>
@@ -186,8 +180,8 @@
         </section>
     </main>
 
-    <footer class="footerlist">
-        <h4 class="titre_footer">ohmyfood</h4>
+    <footer>
+        <h4 class="titre__footer">ohmyfood</h4>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i>
                     <h5>Proposer un restaurant</h5>
