@@ -8,6 +8,7 @@
 /*  Responsive Breakpoint  */
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 a {
@@ -66,33 +67,17 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.entete {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.entete_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  padding: 1.5rem;
 }
 
-.ville_container {
+.logo__header__logo {
+  background-color: white;
+}
+
+.ville__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,11 +88,11 @@ header {
   background-color: #eaeaea;
 }
 
-.ville_container_icone {
+.ville__container_icone {
   margin: 1em;
 }
 
-#slider {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +104,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F2F2F2;
+  text-align: center;
+}
+
+.logo_slogan {
+  margin-bottom: 1rem;
 }
 
 .slider_container {

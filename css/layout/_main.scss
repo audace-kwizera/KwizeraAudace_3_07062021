@@ -1,6 +1,19 @@
-#slider {
+.ville__container {
+    @include flex_row_center;
+    border: 2px 0 1px 0 solid;
+    background-color: darken(#F2F2F2, 3);
+    &_icone { 
+        margin: 1em;
+    }
+}
+
+.logo {
     @include flex_column_center;
     background-color: #F2F2F2;
+    text-align: center;
+    &_slogan {
+        margin-bottom: 1rem;
+    }
 }
 
 .slider_container {
