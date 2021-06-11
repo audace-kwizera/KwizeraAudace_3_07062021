@@ -1,13 +1,9 @@
-.restaurant__section {
-    padding: 1rem;
-}
-
 .restaurant__carte {
     display: flex;
-    width: 22rem;
+    width: auto;
     object-fit: cover;
-    height: 20rem;
-    margin: auto;
+    height: 16rem;
+    margin: 0.5rem 0;
     flex-flow: column;
     background-color: white;
     border-radius: 25px;
@@ -36,10 +32,16 @@
     }
 }
 
+.restaurant__info {
+    & h3, p {
+        margin: 0.5rem 0 0rem 0;
+    }
+}
+
 figcaption {
     background-color: #fff;
     color: black;
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: left;
 }
 
