@@ -1,5 +1,9 @@
-.slider__pages__restaurants {
-    display: flex;
+.slider__pages {
+    margin: 0;
+
+    &__restaurants {
+        display: flex;
+    border: none;
     width: auto;
     object-fit: cover;
     height: 16rem;
@@ -9,5 +13,11 @@
     & img {
         height: 100%;
         width: 100%;
+        z-index: -1;
+    }
     }
 }
+
+
+
+
