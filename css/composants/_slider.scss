@@ -1,0 +1,13 @@
+.slider__pages__restaurants {
+    display: flex;
+    width: auto;
+    object-fit: cover;
+    height: 16rem;
+    margin: 0;
+    padding: 0;
+    flex-flow: column;
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}

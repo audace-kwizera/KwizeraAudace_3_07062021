@@ -1,0 +1,23 @@
+footer {
+    background-color: darken($couleur-clair, 78);
+    padding: 1rem;
+    & h4 {
+        padding: 1rem 0 0 1rem;
+        margin: 0;
+        color: white;
+        font-family: $police_logo_titre;
+    }
+
+    & li, a {
+        list-style: none;
+        color: white;
+    }
+
+    & ul {
+        padding: 0 1rem;
+    }
+}
+
+.footer__icone{
+    margin: 0 0.5rem;
+}
