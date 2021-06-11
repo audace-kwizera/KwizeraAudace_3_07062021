@@ -92,7 +92,7 @@ header {
       flex-wrap: nowrap;
 }
 
-/*  Presentation du site */
+/*  Presentation du site    */
 .ville__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,5 +112,32 @@ header {
 
 .icone__localisation {
   margin-right: 1rem;
+}
+
+.slider {
+  background-color: #F2F2F2;
+  padding: 2rem;
+}
+
+.slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.slider__slogan {
+  margin-bottom: 2rem;
+}
+
+.slider__bouton {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

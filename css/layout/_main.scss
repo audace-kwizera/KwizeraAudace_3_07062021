@@ -3,7 +3,7 @@
     flex-wrap: nowrap;
 }
 
-/*  Presentation du site */
+/*  Presentation du site    */
 
 .ville__container {
     @include flex_row_center;
@@ -16,4 +16,19 @@
 
 .icone__localisation {
     margin-right: 1rem;
+}
+
+.slider {
+    background-color: $couleur-clair;
+    padding: 2rem;
+    &__container {
+        @include flex_column_center;
+        text-align: center;
+    }
+    &__slogan {
+        margin-bottom: 2rem;
+    }
+    &__bouton {
+        margin-bottom: 1rem;
+    }
 }
