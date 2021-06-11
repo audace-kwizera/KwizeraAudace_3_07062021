@@ -41,10 +41,12 @@
     &__section {
         @include flex_column_center;
     }
+
     &__container {
         @include flex_row_center;
         margin: 1rem 0;
     } 
+
     &__numero {
         position: absolute;
         background-color: $primary-color;
@@ -56,7 +58,9 @@
         color: white;
         left: 0.7rem;
         margin: 1.6rem 0;
+        z-index: 1;
     }
+
     &__btn {
         @include flex_row_space_around;
         padding: 0 2.5rem;
@@ -68,7 +72,10 @@
         color: black;
         background: $couleur-clair;
     }
+    
     &__icone {
         margin: 0 10em;
     }
 }
+
+/*    Partie Restaurant   */

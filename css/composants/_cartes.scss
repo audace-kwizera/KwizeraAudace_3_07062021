@@ -1,0 +1,45 @@
+.restaurant__section {
+    padding: 1rem;
+}
+
+.restaurant__carte {
+    display: flex;
+    width: 22rem;
+    object-fit: cover;
+    height: 20rem;
+    margin: auto;
+    flex-flow: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: $ombrecarte;
+    transition: $legeretransition;
+    border: none;
+    &:hover {
+        transform: scale(1.02);
+    } 
+
+    &__photo__mention__nouveaute{
+        position: absolute;
+        margin-top: 1rem;
+        right: 2rem;
+        background-color: $tertiary-color;
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        color: darken($tertiary-color, 40);
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+        height: 11rem;
+        object-fit: cover;
+    }
+}
+
+figcaption {
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    text-align: left;
+}
+
