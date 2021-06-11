@@ -4,6 +4,18 @@
     justify-content: center;
 }
 
+@mixin flex_column_start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin flex_column_end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 @mixin flex_row_center {
     display: flex;
     justify-content: center;
@@ -15,12 +27,14 @@
     justify-content: space-around;
 }
 
+@mixin flex_row_space_between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @mixin btn_clair {
-    @include flex_row_space_around;
-    padding: 0 2.5rem;
-    margin: 0.1rem 0.5rem;
     width: 100%;
-    border-radius: 30px;
     color: black;
     background: $couleur-clair;
 }
