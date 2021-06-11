@@ -77,59 +77,6 @@ header {
   background-color: white;
 }
 
-.ville__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 2px 0 1px 0 solid;
-  background-color: #eaeaea;
-}
-
-.ville__container_icone {
-  margin: 1em;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #F2F2F2;
-  text-align: center;
-}
-
-.logo_slogan {
-  margin-bottom: 1rem;
-}
-
-.slider_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.slider_container_slogan {
-  margin-bottom: 1rem;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,5 +88,29 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+/*  Presentation du site */
+.ville__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  background-color: #dedede;
+  -webkit-box-shadow: inset 0em 0.5em rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0em 0.5em rgba(0, 0, 0, 0.05);
+  color: grey;
+}
+
+.icone__localisation {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
