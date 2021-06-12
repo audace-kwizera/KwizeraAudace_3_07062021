@@ -7,7 +7,7 @@
     <title>Le délice des sens</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <!-- Installation de Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -27,28 +27,32 @@
 
 <body>
     <header>
+        <div class="header__arrow__back">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+
         <a class="logo logo__header" href="index.html">
-            <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
+            <img src="../src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
         </a>
     </header>
 
     <main>
-        <div id="slider">
+        <div class="slider__pages__restaurants">
             <img src="../src/images/restaurants/le_delice_des_sens.jpg" alt="Photo du restaurant À la française">
         </div>
 
-        <section id="menu">
-            <div class="restaurant__nom">
+        <section class="menu">
+            <div class="menu__restaurant__nom">
                 <h2>Le délice des sens</h2>
                 <!-- icone favoris à rajouter -->
                 <div class="icone favoris__icone"></div>
             </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Entrées</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Tartare de thon</h4>
@@ -64,7 +68,7 @@
 
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Bouchée de homard croustillant </h4>
@@ -79,7 +83,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Velouté de cèpes </h4>
@@ -94,13 +98,13 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Plats</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Poulet rôti aux herbes de Provence</h4>
@@ -116,7 +120,7 @@
 
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Langouste rôtie</h4>
@@ -131,7 +135,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Côte de boeuf Angus</h4>
@@ -146,13 +150,13 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Desserts</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Farandole de desserts</h4>
@@ -167,7 +171,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Crème brulée</h4>
@@ -183,7 +187,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Tiramisu </h4>
@@ -198,9 +202,9 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <button class="btn">Commander</button>
+            <button class="btn menu__commande">Commander</button>
         </section>
 
 
@@ -209,11 +213,11 @@
     <footer>
         <h4 class="footer__titre">ohmyfood</h4>
         <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i>
-                    <h5>Proposer un restaurant</h5>
+            <li><a href="#">
+                    <h5><span><i class="footer__icone fas fa-utensils"></i></span>Proposer un restaurant</h5>
                 </a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i>
-                    <h5>Devenir partenaire</h5>
+            <li><a href="#">
+                    <h5><span><i class="footer__icone fas fa-hands-helping"></i></span> partenaire</h5>
                 </a></li>
             <li><a href="#">
                     <p>Mentions légales</p>
