@@ -21,3 +21,19 @@ footer {
 .footer__icone{
     margin: 0 0.5rem;
 }
+
+@media (min-width: $big-smartphone) {
+    footer {
+        & h4 {
+            font-size: 1.5rem;
+        }
+
+        & h5 {
+            font-size: 1.15rem;
+        }
+
+        & a {
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -18,6 +18,32 @@
     }
 }
 
+@media (min-width: $big-smartphone) {
+    .slider__pages__restaurants {
+        height: 25rem;
+    }
+}
 
+@media (min-width: $tablette) {
+    .slider__pages__restaurants {
+        height: 33rem;
+    }
+}
 
+@media (min-width: $big-tablette) {
+    .slider__pages__restaurants {
+        height: 43rem;
+    }
+}
 
+@media (min-width: $desktop) {
+    .slider__pages__restaurants {
+        height: 50rem;
+    }
+}
+
+@media (min-width: $big-desktop) {
+    .slider__pages__restaurants {
+        height: 75rem;
+    }
+}

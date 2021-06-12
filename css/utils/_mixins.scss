@@ -10,6 +10,12 @@
     justify-content: flex-start;
 }
 
+@mixin flex_column_space_around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 @mixin flex_column_end {
     display: flex;
     flex-direction: column;

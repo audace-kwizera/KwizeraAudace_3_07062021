@@ -8,8 +8,10 @@
 /*  Animations  */
 /*  Responsive Breakpoint  */
 body {
+  display: block;
   font-family: "Roboto", sans-serif;
-  margin: 0;
+  margin: auto;
+  max-width: 2048px;
 }
 
 a {
@@ -66,6 +68,36 @@ a {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+@media (min-width: 540px) {
+  .slider__pages__restaurants {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider__pages__restaurants {
+    height: 33rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider__pages__restaurants {
+    height: 43rem;
+  }
+}
+
+@media (min-width: 1248px) {
+  .slider__pages__restaurants {
+    height: 50rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider__pages__restaurants {
+    height: 75rem;
+  }
 }
 
 .restaurant__carte {
@@ -422,6 +454,106 @@ header {
   margin: 3rem 2rem 4rem 2rem;
 }
 
+@media (min-width: 540px) {
+  .menu__partie__restaurant
+h3 {
+    width: 30px;
+  }
+  .menu {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  .menu__commande {
+    margin: 5rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+  }
+  .menu__btn {
+    height: 5rem;
+    margin: 0.6rem 0;
+  }
+  .menu__description h4 {
+    font-size: 1.45rem;
+  }
+  .menu__description p {
+    font-size: 1.25rem;
+  }
+  .menu__prix h5 {
+    font-size: 1.3rem;
+  }
+  .menu__commande {
+    padding: 0.3rem;
+    height: 4rem;
+    width: 50%;
+    margin: 10% 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu__partie__restaurant h3 {
+    margin: 3rem;
+  }
+  .menu__restaurant__nom h2 {
+    text-align: center;
+  }
+  .menu__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+    width: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu__btn {
+    height: 10rem;
+    width: 45%;
+    margin: 1rem 0;
+  }
+  .menu__description h4 {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu__description p {
+    font-size: 1.2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu__commande {
+    padding: 0.3rem;
+    height: 4rem;
+    width: 30%;
+    margin: 10% 35%;
+  }
+}
+
+@media (min-width: 1248px) {
+  .menu__btn {
+    height: 10rem;
+    width: 30%;
+    margin: 1rem 0;
+  }
+  .menu__commande {
+    padding: 0.3rem;
+    height: 4rem;
+    width: 20%;
+    margin: 10% 40%;
+  }
+}
+
 footer {
   background-color: #2b2b2b;
   padding: 1rem;
@@ -445,5 +577,17 @@ footer ul {
 
 .footer__icone {
   margin: 0 0.5rem;
+}
+
+@media (min-width: 540px) {
+  footer h4 {
+    font-size: 1.5rem;
+  }
+  footer h5 {
+    font-size: 1.15rem;
+  }
+  footer a {
+    font-size: 1.1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

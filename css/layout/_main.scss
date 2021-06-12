@@ -166,4 +166,120 @@
         margin: 3rem 2rem 4rem 2rem;
     }
 }
-  
+
+@media (min-width: $big-smartphone) {
+    .menu__partie__restaurant
+    & h3 {
+        width: 30px;
+    }
+
+    .menu {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .menu__commande {
+        margin: 5rem 2.5rem ;
+    }
+}
+
+@media (min-width: $tablette) {
+    .menu {
+        padding: 2rem 3rem;
+        font-size: 1.2rem;
+
+        &__btn {
+            height: 5rem;
+            margin: 0.6rem 0;
+        }
+
+        &__description {
+            & h4 {
+                font-size: 1.45rem;
+            } 
+            & p { 
+                font-size: 1.25rem;
+            }
+        }
+
+        &__prix {
+            & h5 {
+                font-size: 1.3rem;
+            }
+        }
+
+        &__commande {
+            padding: 0.3rem;
+            height: 4rem;
+            width: 50%;
+            margin: 10% 25%;
+        }
+    }
+}
+
+@media (min-width: $big-tablette) {
+    .menu {
+
+        &__partie__restaurant {
+            & h3 {
+                margin: 3rem;
+            }
+        }
+
+        &__restaurant__nom {
+            & h2 {
+                text-align: center;
+            }
+        }
+
+        &__container {
+            @include flex_row_space_around;
+            margin: 0;
+            width: auto;
+            flex-wrap: wrap;
+        }        
+
+        &__btn {
+            height: 10rem;
+            width: 45%;
+            margin: 1rem 0;
+        }
+
+        &__description {
+            & h4 {
+                margin-bottom: 1.2rem;
+                font-size: 1.5rem;
+                flex-wrap: wrap;
+            }
+    
+            & p {
+                font-size: 1.2rem;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__commande {
+            padding: 0.3rem;
+            height: 4rem;
+            width: 30%;
+            margin: 10% 35%;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .menu {
+        &__btn {
+            height: 10rem;
+            width: 30%;
+            margin: 1rem 0;
+        }
+
+        &__commande {
+            padding: 0.3rem;
+            height: 4rem;
+            width: 20%;
+            margin: 10% 40%;
+        }
+    }
+}
