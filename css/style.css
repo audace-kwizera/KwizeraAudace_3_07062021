@@ -135,11 +135,31 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.header__arrow__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  color: black;
 }
 
 .logo__header__logo {
   background-color: white;
+}
+
+.logo__header {
+  width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -310,7 +330,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -3rem;
-  background-color: #e5e5e5;
+  background-color: #ededed;
   border-radius: 25px 25px 0 0;
   padding: 1rem;
 }

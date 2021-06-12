@@ -1,10 +1,21 @@
 header {
     @include flex_row_center;
-    padding: 1.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.header__arrow__back {
+    @include flex_column_center;
+    font-size: 1.3rem;
+    color: black;
 }
 
 .logo__header__logo {
     background-color: white;
+}
+
+.logo__header {
+    width: 100%;
+    text-align: center;
 }
 
 

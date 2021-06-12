@@ -7,7 +7,7 @@
     <title>Le délice des sens</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <!-- Installation de Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -27,28 +27,32 @@
 
 <body>
     <header>
+        <div class="header__arrow__back">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+
         <a class="logo logo__header" href="index.html">
-            <img src="src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
+            <img src="../src/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood" />
         </a>
     </header>
 
     <main>
-        <div id="slider">
+        <div class="slider__pages__restaurants">
             <img src="../src/images/restaurants/la_note_enchantee.jpg" alt="Photo du restaurant À la française">
         </div>
 
-        <section id="menu">
-            <div class="restaurant__nom">
+        <section class="menu">
+            <div class="menu__restaurant__nom">
                 <h2>La note enchantée</h2>
                 <!-- icone favoris à rajouter -->
                 <div class="icone favoris__icone"></div>
             </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Entrées</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Ravioles de foie gras </h4>
@@ -64,7 +68,7 @@
 
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Caviar osciètre</h4>
@@ -79,7 +83,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Homard et espuma de potiron</h4>
@@ -94,7 +98,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Foie gras de canard cuit entier</h4>
@@ -109,13 +113,13 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Plats</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Noix de coquilles Saint-Jacques</h4>
@@ -131,7 +135,7 @@
 
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Langoustine poêlée</h4>
@@ -146,7 +150,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Mijoté de queue de boeuf</h4>
@@ -161,13 +165,13 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article>
+            <div class="menu__partie__restaurant">
                 <h3>Desserts</h3>
 
                 <div class="container menu__container">
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Macaron noisette et chocolat</h4>
@@ -182,7 +186,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Baba au rhum revisité </h4>
@@ -198,7 +202,7 @@
                         </a>
                     </div>
 
-                    <div class="menu__btn">
+                    <div class="btn menu__btn">
                         <a href="#" class="menu__lien">
                             <div class="menu__description">
                                 <h4>Tarte au citron meringuée</h4>
@@ -213,22 +217,22 @@
                         </a>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <button class="btn">Commander</button>
+            <button class="btn menu__commande">Commander</button>
         </section>
 
 
     </main>
 
-    <footer">
+    <footer>
         <h4 class="footer__titre">ohmyfood</h4>
         <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i>
-                    <h5>Proposer un restaurant</h5>
+            <li><a href="#">
+                    <h5><span><i class="footer__icone fas fa-utensils"></i></span>Proposer un restaurant</h5>
                 </a></li>
-            <li><a href="#"><i class="fas fa-hands-helping"></i>
-                    <h5>Devenir partenaire</h5>
+            <li><a href="#">
+                    <h5><span><i class="footer__icone fas fa-hands-helping"></i></span> partenaire</h5>
                 </a></li>
             <li><a href="#">
                     <p>Mentions légales</p>
