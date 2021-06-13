@@ -41,6 +41,10 @@ a {
 .btn:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #ceb3ef;
+  color: black;
 }
 
 .slider__pages {
@@ -396,6 +400,12 @@ header {
   width: auto;
   height: 4rem;
   border-radius: 25px;
+}
+
+.menu__btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: white;
 }
 
 .menu__lien {

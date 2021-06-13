@@ -124,6 +124,10 @@
         width: auto;
         height: 4rem;
         border-radius: 25px;
+        &:hover {
+            transition: 0.5s;
+            background: white;
+        }
     }
 
     &__lien {
