@@ -330,6 +330,12 @@ header {
   border-radius: 30px;
 }
 
+.fonctionnement__btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: white;
+}
+
 .fonctionnement__icone {
   margin: 0 10em;
 }
