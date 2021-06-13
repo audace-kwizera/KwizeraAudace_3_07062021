@@ -163,27 +163,71 @@
     }
 
     &__commande {
-        margin: 3rem 2rem 4rem 2rem;
+        margin: 4rem 3rem;
     }
 }
 
 @media (min-width: $big-smartphone) {
-    .menu__partie__restaurant
-    & h3 {
-        width: 30px;
+    /*  Presentation du site    */
+    .slider {
+        &__bouton {
+            padding: 1rem;
+            margin: 2% 25%;
+            width: 50%;
+        }
     }
 
+    /*  Partie Fonctionnement    */
+    .fonctionnement {
+        padding: 2rem 4rem;
+    }
+
+/*    Partie Restaurant   */
+    
+    .restaurant {
+        padding: 1rem 2.5rem;
+        &__carte__photo__mention__nouveaute {
+            margin: 1rem 3rem;
+        }
+    }
+
+    /*  Partie Menu    */
     .menu {
         padding: 2rem;
         font-size: 1.2rem;
-    }
+        &__partie__restaurant {
+            & h3 {
+                width: 30px;
+            }
+        }
 
-    .menu__commande {
-        margin: 5rem 2.5rem ;
+        &__commande {
+            margin: 5rem 2.5rem;
+        }
     }
 }
 
 @media (min-width: $tablette) {
+
+    /*  Partie Fonctionnement    */
+    .fonctionnement {
+        padding: 3rem 4rem;
+    }
+
+/*    Partie Restaurant   */
+    
+    .restaurant {
+        padding: 3rem 1rem;
+        &__section {
+            @include flex_row_space_around;
+            flex-wrap: wrap;
+            & a {
+                width: 40%;
+            }
+        }
+    }
+    
+/*  Partie Menu    */
     .menu {
         padding: 2rem 3rem;
         font-size: 1.2rem;
@@ -218,6 +262,53 @@
 }
 
 @media (min-width: $big-tablette) {
+
+/*  Presentation du site    */
+    .slider {
+        &__slogan {
+            margin: 2rem;
+            font-size: 1.2rem;
+        }
+        &__bouton {
+            padding: 1rem;
+            margin: 2% 35%;
+            width: 30%;
+        }
+    }
+
+/*  Partie Fonctionnement    */
+
+    .fonctionnement {
+        flex-wrap: wrap;
+        &__section {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__container {
+            justify-content: flex-start;
+        } 
+
+        &__numero {
+            left: auto;
+        }
+
+        &__icone {
+            margin: 1rem;
+        }
+    }
+
+/*    Partie Restaurant   */
+    .restaurant {
+        &__section {
+            & a {
+                width: 30%;
+            }
+        }
+    }
+
+/*  Partie Menu    */
+
     .menu {
 
         &__partie__restaurant {
@@ -268,6 +359,16 @@
 }
 
 @media (min-width: $desktop) {
+/*    Partie Restaurant   */
+    .restaurant {
+        &__section {
+            & a {
+                width: 24%;
+            }
+        }
+    }
+
+/*  Partie Menu    */
     .menu {
         &__btn {
             height: 10rem;

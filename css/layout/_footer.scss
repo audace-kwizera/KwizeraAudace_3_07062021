@@ -37,3 +37,24 @@ footer {
         }
     }
 }
+
+@media (min-width: $tablette) {
+    footer {
+        & h4 {
+            text-align: center;
+        }
+
+        & ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        & li {
+            align-self: center;
+        }
+
+        & h5 {
+            margin: 0;
+        }
+    }
+}
