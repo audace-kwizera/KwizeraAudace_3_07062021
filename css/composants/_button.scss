@@ -10,12 +10,10 @@
     background: $couleur-bouton;
     color: white;
     font-size: 1.2rem;
-    transition: $legeretransition;
     &:hover {
-        transform: scale(1.02);
-        transition: 0.5s;
-        background: lighten(#9356DC, 22);
-        color: black;
+        
+        
+        background: lighten($primary-color, 10);
     }
 }
 
