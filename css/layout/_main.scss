@@ -186,14 +186,50 @@
     }
 
     /*  Partie Fonctionnement    */
+    
+
     .fonctionnement {
-        padding: 2rem 4rem;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+
+        &__section {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2%;
+        }
+
+        &__container {
+            justify-content: flex-start;
+            width: 48%;
+            margin: 1%;
+        } 
+
+        &__numero {
+            left: auto;
+        }
+
+        &__btn {
+            padding: 0 1.5rem;
+        }
+
+        &__icone {
+            margin: 1rem;
+        }
     }
 
 /*    Partie Restaurant   */
     
     .restaurant {
-        padding: 1rem 2.5rem;
+        padding: 3rem 1rem;
+        &__section {
+            @include flex_row_space_around;
+            flex-wrap: wrap;
+            & a {
+                width: 40%;
+            }
+        }
+
         &__carte__photo__mention__nouveaute {
             margin: 1rem 3rem;
         }
@@ -218,28 +254,21 @@
 @media (min-width: $tablette) {
 
     /*  Partie Fonctionnement    */
-    .fonctionnement {
-        padding: 3rem 4rem;
-    }
 
-/*    Partie Restaurant   */
-    
-    .restaurant {
-        padding: 3rem 1rem;
-        &__section {
-            @include flex_row_space_around;
-            flex-wrap: wrap;
-            & a {
-                width: 40%;
-            }
+    .fonctionnement {
+        padding: 2rem 2rem;
+
+        &__container {
+            width: 40%;
+        } 
+
+        &__btn {
+            padding: 0 1.6rem;
         }
     }
     
 /*  Partie Menu    */
     .menu {
-        padding: 2rem 3rem;
-        font-size: 1.2rem;
-
         &__btn {
             height: 5rem;
             margin: 0.6rem 0;
@@ -288,6 +317,7 @@
 
     .fonctionnement {
         flex-wrap: wrap;
+        padding: 2rem 1rem;
         &__section {
             flex-direction: row;
             justify-content: space-around;
@@ -295,6 +325,7 @@
 
         &__container {
             justify-content: flex-start;
+            width: 30%;
         } 
 
         &__numero {
@@ -367,6 +398,37 @@
 }
 
 @media (min-width: $desktop) {
+
+/*  Partie Fonctionnement    */
+
+.fonctionnement {
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+    &__section {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 10%;
+    }
+
+    &__container {
+        justify-content: flex-start;
+        width: 30%;
+        margin: 0 1%;
+    } 
+
+    &__numero {
+        left: auto;
+    }
+
+    &__btn {
+        padding: 0 2.5rem;
+    }
+
+    &__icone {
+        margin: 1rem;
+    }
+}
+
 /*    Partie Restaurant   */
     .restaurant {
         &__section {

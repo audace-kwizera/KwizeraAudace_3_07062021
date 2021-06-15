@@ -472,32 +472,36 @@ header {
   }
   /*  Partie Fonctionnement    */
   .fonctionnement {
-    padding: 2rem 4rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem 1rem;
   }
-  /*    Partie Restaurant   */
-  .restaurant {
-    padding: 1rem 2.5rem;
+  .fonctionnement__section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2%;
   }
-  .restaurant__carte__photo__mention__nouveaute {
-    margin: 1rem 3rem;
+  .fonctionnement__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 48%;
+    margin: 1%;
   }
-  /*  Partie Menu    */
-  .menu {
-    padding: 2rem;
-    font-size: 1.2rem;
+  .fonctionnement__numero {
+    left: auto;
   }
-  .menu__partie__restaurant h3 {
-    width: 30px;
+  .fonctionnement__btn {
+    padding: 0 1.5rem;
   }
-  .menu__commande {
-    margin: 5rem 2.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  /*  Partie Fonctionnement    */
-  .fonctionnement {
-    padding: 3rem 4rem;
+  .fonctionnement__icone {
+    margin: 1rem;
   }
   /*    Partie Restaurant   */
   .restaurant {
@@ -519,11 +523,34 @@ header {
   .restaurant__section a {
     width: 40%;
   }
+  .restaurant__carte__photo__mention__nouveaute {
+    margin: 1rem 3rem;
+  }
   /*  Partie Menu    */
   .menu {
-    padding: 2rem 3rem;
+    padding: 2rem;
     font-size: 1.2rem;
   }
+  .menu__partie__restaurant h3 {
+    width: 30px;
+  }
+  .menu__commande {
+    margin: 5rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /*  Partie Fonctionnement    */
+  .fonctionnement {
+    padding: 2rem 2rem;
+  }
+  .fonctionnement__container {
+    width: 40%;
+  }
+  .fonctionnement__btn {
+    padding: 0 1.6rem;
+  }
+  /*  Partie Menu    */
   .menu__btn {
     height: 5rem;
     margin: 0.6rem 0;
@@ -560,6 +587,7 @@ header {
   .fonctionnement {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 2rem 1rem;
   }
   .fonctionnement__section {
     -webkit-box-orient: horizontal;
@@ -573,6 +601,7 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 30%;
   }
   .fonctionnement__numero {
     left: auto;
@@ -631,6 +660,37 @@ header {
 }
 
 @media (min-width: 1248px) {
+  /*  Partie Fonctionnement    */
+  .fonctionnement {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem 3rem;
+  }
+  .fonctionnement__section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 10%;
+  }
+  .fonctionnement__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 30%;
+    margin: 0 1%;
+  }
+  .fonctionnement__numero {
+    left: auto;
+  }
+  .fonctionnement__btn {
+    padding: 0 2.5rem;
+  }
+  .fonctionnement__icone {
+    margin: 1rem;
+  }
   /*    Partie Restaurant   */
   .restaurant__section a {
     width: 24%;
