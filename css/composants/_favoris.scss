@@ -1,0 +1,14 @@
+.favoris {
+    position: absolute;
+    &__icone {
+        position: absolute;
+        &__vide {
+            position: absolute;
+        }
+
+        &__pleine {
+            position: absolute;
+        }
+    }
+}
+

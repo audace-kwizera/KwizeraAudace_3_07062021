@@ -153,6 +153,22 @@ figcaption {
   text-align: left;
 }
 
+.favoris {
+  position: absolute;
+}
+
+.favoris__icone {
+  position: absolute;
+}
+
+.favoris__icone__vide {
+  position: absolute;
+}
+
+.favoris__icone__pleine {
+  position: absolute;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
