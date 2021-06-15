@@ -14,6 +14,7 @@
         height: 100%;
         width: 100%;
         z-index: -1;
+        object-fit: cover;
     }
     }
 }
@@ -32,18 +33,12 @@
 
 @media (min-width: $big-tablette) {
     .slider__pages__restaurants {
-        height: 43rem;
-    }
-}
-
-@media (min-width: $desktop) {
-    .slider__pages__restaurants {
-        height: 50rem;
+        height: 40rem;
     }
 }
 
 @media (min-width: $big-desktop) {
     .slider__pages__restaurants {
-        height: 75rem;
+        height: 42rem;
     }
 }

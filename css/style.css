@@ -65,6 +65,8 @@ a {
   height: 100%;
   width: 100%;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 540px) {
@@ -81,19 +83,13 @@ a {
 
 @media (min-width: 950px) {
   .slider__pages__restaurants {
-    height: 43rem;
-  }
-}
-
-@media (min-width: 1248px) {
-  .slider__pages__restaurants {
-    height: 50rem;
+    height: 40rem;
   }
 }
 
 @media (min-width: 1400px) {
   .slider__pages__restaurants {
-    height: 75rem;
+    height: 42rem;
   }
 }
 
