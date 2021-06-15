@@ -324,17 +324,8 @@
         }
 
         &__container {
-            justify-content: flex-start;
             width: 30%;
         } 
-
-        &__numero {
-            left: auto;
-        }
-
-        &__icone {
-            margin: 1rem;
-        }
     }
 
 /*    Partie Restaurant   */
@@ -402,30 +393,17 @@
 /*  Partie Fonctionnement    */
 
 .fonctionnement {
-    flex-wrap: wrap;
     padding: 2rem 3rem;
     &__section {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 10%;
+        padding: 0 1%;
     }
 
     &__container {
-        justify-content: flex-start;
-        width: 30%;
         margin: 0 1%;
     } 
 
-    &__numero {
-        left: auto;
-    }
-
     &__btn {
         padding: 0 2.5rem;
-    }
-
-    &__icone {
-        margin: 1rem;
     }
 }
 
@@ -453,4 +431,37 @@
             margin: 10% 40%;
         }
     }
+}
+
+@media (min-width: $big-desktop) {
+/*  Presentation du site    */
+.slider {
+    &__slogan {
+        font-size: 1.4rem;
+    }
+    &__bouton {
+        margin: 2% 40%;
+        width: 20%;
+    }
+}
+
+/*  Partie Fonctionnement    */
+
+.fonctionnement {
+    &__container {
+        margin: 1%;
+        width: 24%;
+    } 
+}
+
+/*    Partie Restaurant   */
+.restaurant {
+    &__section {
+        & a {
+            width: 20%;
+        }
+    }
+}
+
+
 }

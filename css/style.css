@@ -598,16 +598,7 @@ header {
         justify-content: space-around;
   }
   .fonctionnement__container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     width: 30%;
-  }
-  .fonctionnement__numero {
-    left: auto;
-  }
-  .fonctionnement__icone {
-    margin: 1rem;
   }
   /*    Partie Restaurant   */
   .restaurant__section a {
@@ -662,34 +653,16 @@ header {
 @media (min-width: 1248px) {
   /*  Partie Fonctionnement    */
   .fonctionnement {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     padding: 2rem 3rem;
   }
   .fonctionnement__section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 0 10%;
+    padding: 0 1%;
   }
   .fonctionnement__container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 30%;
     margin: 0 1%;
-  }
-  .fonctionnement__numero {
-    left: auto;
   }
   .fonctionnement__btn {
     padding: 0 2.5rem;
-  }
-  .fonctionnement__icone {
-    margin: 1rem;
   }
   /*    Partie Restaurant   */
   .restaurant__section a {
@@ -706,6 +679,26 @@ header {
     height: 4rem;
     width: 20%;
     margin: 10% 40%;
+  }
+}
+
+@media (min-width: 1400px) {
+  /*  Presentation du site    */
+  .slider__slogan {
+    font-size: 1.4rem;
+  }
+  .slider__bouton {
+    margin: 2% 40%;
+    width: 20%;
+  }
+  /*  Partie Fonctionnement    */
+  .fonctionnement__container {
+    margin: 1%;
+    width: 24%;
+  }
+  /*    Partie Restaurant   */
+  .restaurant__section a {
+    width: 20%;
   }
 }
 
