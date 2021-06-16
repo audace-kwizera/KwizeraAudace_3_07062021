@@ -1,5 +1,9 @@
 .favoris {
-    position: absolute;
+    display: flex;
+    padding-bottom: 1.5rem;
+    align-self: center;
+    font-size: 1.5rem;
+    justify-content: flex-end;
     &__icone {
         position: absolute;
         &__vide {
