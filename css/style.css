@@ -176,6 +176,12 @@ figcaption {
 
 .favoris__icone__pleine {
   position: absolute;
+  opacity: 0;
+  color: #9356DC;
+}
+
+.favoris__icone__pleine:hover {
+  opacity: 1;
 }
 
 header {
@@ -400,8 +406,25 @@ header {
   padding: 1rem;
 }
 
+.menu__restaurant__nom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu h2 {
   font-family: "Shrikhand", cursive;
+  width: 95%;
+}
+
+.menu__favoris__icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
 }
 
 .menu__partie__restaurant h3 {

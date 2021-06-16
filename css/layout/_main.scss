@@ -108,8 +108,20 @@
     background-color: darken($couleur-clair, 2);
     border-radius: 25px 25px 0 0;
     padding: 1rem;
+
+    &__restaurant__nom {
+        display: flex;
+    }
+
     & h2 {
         font-family: $police_logo_titre;
+        width: 95%;
+    }
+
+    &__favoris__icone {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
     }
 
     &__partie__restaurant {

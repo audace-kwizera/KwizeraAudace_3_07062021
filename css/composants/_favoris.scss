@@ -12,6 +12,11 @@
 
         &__pleine {
             position: absolute;
+            opacity: 0;
+            color: $primary-color;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
