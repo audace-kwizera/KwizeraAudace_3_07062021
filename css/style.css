@@ -513,7 +513,14 @@ header {
 }
 
 .menu__commande {
-  margin: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25%;
+  width: 50%;
 }
 
 @media (min-width: 540px) {
@@ -587,9 +594,6 @@ header {
   .menu__partie__restaurant h3 {
     width: 30px;
   }
-  .menu__commande {
-    margin: 5rem 2.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -636,6 +640,10 @@ header {
     margin: 2% 35%;
     width: 30%;
   }
+  /*  Partie Menu    */
+  .menu__btn {
+    height: 5rem;
+  }
   /*  Partie Fonctionnement    */
   .fonctionnement {
     -ms-flex-wrap: wrap;
@@ -680,7 +688,7 @@ header {
         flex-wrap: wrap;
   }
   .menu__btn {
-    height: 10rem;
+    height: 6rem;
     width: 45%;
     margin: 1rem 0;
   }
@@ -723,7 +731,6 @@ header {
   }
   /*  Partie Menu    */
   .menu__btn {
-    height: 10rem;
     width: 30%;
     margin: 1rem 0;
   }

@@ -188,7 +188,9 @@
     }
 
     &__commande {
-        margin: 4rem 3rem;
+        @include flex_row_center;
+        margin: 25%;
+        width: 50%;
     }
 }
 
@@ -261,10 +263,6 @@
                 width: 30px;
             }
         }
-
-        &__commande {
-            margin: 5rem 2.5rem;
-        }
     }
 }
 
@@ -330,6 +328,14 @@
         }
     }
 
+    /*  Partie Menu    */
+    .menu {
+        &__btn {
+            height: 5rem;
+        }
+    }
+
+
 /*  Partie Fonctionnement    */
 
     .fonctionnement {
@@ -378,7 +384,7 @@
         }        
 
         &__btn {
-            height: 10rem;
+            height: 6rem;
             width: 45%;
             margin: 1rem 0;
         }
@@ -436,7 +442,6 @@
 /*  Partie Menu    */
     .menu {
         &__btn {
-            height: 10rem;
             width: 30%;
             margin: 1rem 0;
         }
