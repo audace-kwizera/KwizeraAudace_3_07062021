@@ -1,0 +1,100 @@
+.chargement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-attachment: $couleur-clair;
+    background-color: $couleur-clair;
+    animation: chargement 2200ms linear;
+    z-index: 10;
+    visibility: hidden;
+   }
+
+/*  Visibilité du loader    */
+@keyframes chargement {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.9;
+    }
+    40% {
+        opacity: 0.8;
+    }
+    60% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+    /*  effet lumineux background   */
+    animation: animateBg 10s linear 1;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15%;
+        height: 15px;
+        border-radius: 50%;
+        background: $primary-color;
+        box-shadow: 0 0 10px $primary-color,
+                    0 0 20px $primary-color,
+                    0 0 40px $primary-color,
+                    0 0 60px $primary-color,
+                    0 0 80px $primary-color,
+                    0 0 100px $primary-color;
+        animation: animate 1s linear infinite;
+        /*  delai pour avoir effet de rotation  */
+        animation-delay: calc(0.1s * var(--i));
+    }
+}
+
+/*  effet lumineux background   */
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/*  effet lumineux sur les rond qui disparaissse comme
+    si ils clignotent   */
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    80%, 100% {
+        transform: scale(0);
+    }
+}
+
