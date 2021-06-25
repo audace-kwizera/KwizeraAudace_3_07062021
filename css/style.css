@@ -595,7 +595,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.3rem;
+  padding: 0;
   margin: 0.4rem 0;
   width: auto;
   height: 4rem;
@@ -618,10 +618,37 @@ header {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
   width: 100%;
-  padding: 4%;
+  padding: 0;
+}
+
+.menu__transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.menu__transition__selection {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 25px 25px 0;
 }
 
 .menu__description {
@@ -634,12 +661,20 @@ header {
   margin-top: 0.1rem;
   margin-bottom: 0;
   font-size: 1.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .menu__description p {
   margin-top: 0.5rem;
   margin-bottom: 0.1rem;
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .menu__prix {
