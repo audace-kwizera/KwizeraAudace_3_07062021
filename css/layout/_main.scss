@@ -145,6 +145,17 @@
             transition: 0.5s;
             background: white;
         }
+
+        &:hover .menu__transition__selection {
+            @include flex_row_center_align_center; 
+            animation: slide-left 0.5s ease ;
+            transform-origin: right;
+        }
+
+        &:hover .menu__prix {
+            padding-right: 70px;
+            transition: 0.5s ease ;
+        }
     }
 
     &__lien {
@@ -162,8 +173,7 @@
         padding: 0.7rem;
         &__selection {
             background-color: $tertiary-color;
-            display: flex;
-            justify-content: center;
+            display: none;
             width: 25%;
             align-items: center;
             border-radius: 0 25px 25px 0;
@@ -205,8 +215,17 @@
     }
 
     &__selection {
+        display: flex;
+        height: 100%;
+        align-items: center;
         background-color: $tertiary-color;
         color: white;
+        &__icone {
+            font-size: 2rem;
+            color: white;
+            transform: rotate(180deg);
+            animation: rotate 0.5s both;
+        }
     }
 
     &__commande {
@@ -214,6 +233,38 @@
         margin: 25%;
         width: 50%;
     }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+  @keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(-50px);
+    }
+  }
+  
+ 
+  @keyframes opacity {
+    0% {
+              opacity: 0;
+    }
+    100% {
+              opacity: 1;
+    }
+  }
+  
+  .appears-with-opacity {
+	    animation: opacity 1s both;
 }
 
 @media (min-width: $big-smartphone) {
