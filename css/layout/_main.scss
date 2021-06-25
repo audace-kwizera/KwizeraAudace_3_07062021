@@ -181,16 +181,17 @@
     }
 
     &__description {
-        width: 90%;
+        width: 70%;
         margin: 0;
         color: black;
+        overflow: hidden;
         & h4 {
             margin-top: 0.1rem;
             margin-bottom: 0;
             font-size: 1.15rem;
             overflow: hidden;
             text-overflow: ellipsis;
-            flex-wrap: nowrap;
+            white-space: nowrap;
         }
 
         & p {
@@ -199,13 +200,13 @@
             font-size: 0.9rem;
             overflow: hidden;
             text-overflow: ellipsis;
-            flex-wrap: nowrap;
+            white-space: nowrap;
         }
     }
 
     &__prix {
         @include flex_row_center;
-        width: 10%;
+        width: 30%;
         align-items: center;
         margin: 0;
         & h5 {
