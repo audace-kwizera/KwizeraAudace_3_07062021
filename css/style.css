@@ -503,7 +503,7 @@ header {
   background: #F2F2F2;
   height: 5rem;
   font-size: 1.1rem;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin: 0.1rem 0.5rem;
   border-radius: 30px;
 }
@@ -598,7 +598,7 @@ header {
   padding: 0;
   margin: 0.4rem 0;
   width: auto;
-  height: 4rem;
+  height: 3.2rem;
   border-radius: 25px;
 }
 
@@ -654,7 +654,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.3rem;
 }
 
 .menu__transition__selection {
@@ -672,12 +672,13 @@ header {
   margin: 0;
   color: black;
   overflow: hidden;
+  padding: 0.4rem;
 }
 
 .menu__description h4 {
   margin-top: 0.1rem;
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -686,7 +687,7 @@ header {
 .menu__description p {
   margin-top: 0.5rem;
   margin-bottom: 0.1rem;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -709,13 +710,13 @@ header {
 .menu__prix h5 {
   margin-bottom: 0;
   color: black;
+  font-size: 0.7rem;
 }
 
 .menu__selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -724,7 +725,6 @@ header {
 }
 
 .menu__selection__icone {
-  font-size: 2rem;
   color: white;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

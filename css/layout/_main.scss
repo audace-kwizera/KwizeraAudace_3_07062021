@@ -66,7 +66,7 @@
         @include btn_clair;
         height: 5rem;
         font-size: 1.1rem;
-        padding: 0 2.5rem;
+        padding: 0 2rem;
         margin: 0.1rem 0.5rem;
         border-radius: 30px;
         &:hover {
@@ -139,7 +139,7 @@
         padding: 0;
         margin: 0.4rem 0;
         width: auto;
-        height: 4rem;
+        height: 3.2rem;
         border-radius: 25px;
         &:hover {
             transition: 0.5s;
@@ -153,7 +153,7 @@
         }
 
         &:hover .menu__prix { 
-            transition: 0.4s ease ;
+            transition: 0.4s ease;
         }
     }
 
@@ -169,7 +169,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 0.7rem;
+        padding: 0.3rem;
         &__selection {
             background-color: $tertiary-color;
             display: none;
@@ -184,10 +184,11 @@
         margin: 0;
         color: black;
         overflow: hidden;
+        padding: 0.4rem;
         & h4 {
             margin-top: 0.1rem;
             margin-bottom: 0;
-            font-size: 0.9rem;
+            font-size: 0.6rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -196,7 +197,7 @@
         & p {
             margin-top: 0.5rem;
             margin-bottom: 0.1rem;
-            font-size: 0.9rem;
+            font-size: 0.5rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -211,17 +212,16 @@
         & h5 {
             margin-bottom: 0;
             color: black;
+            font-size: 0.7rem;
         }
     }
 
     &__selection {
         display: flex;
-        height: 100%;
         align-items: center;
         background-color: $tertiary-color;
         color: white;
         &__icone {
-            font-size: 2rem;
             color: white;
             transform: rotate(180deg);
             animation: rotate 0.5s both;
