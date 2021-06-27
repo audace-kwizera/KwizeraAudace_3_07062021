@@ -141,9 +141,12 @@
         width: auto;
         height: 3.2rem;
         border-radius: 25px;
+        transition: 0.5s;
+        animation: slide-down 4000ms;
         &:hover {
             transition: 0.5s;
             background: white;
+            transform: scale(1.1) rotate(10deg);
         }
 
         &:hover .menu__transition__selection {
@@ -239,12 +242,12 @@
     0% {
         transform: rotate(0);
 }
-100% {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-  @keyframes slide-left {
+@keyframes slide-left {
     0% {
               transform: scaleX(0);
     }
@@ -254,18 +257,40 @@
   }
   
  
-  @keyframes opacity {
+@keyframes opacity {
     0% {
               opacity: 0;
     }
     100% {
               opacity: 1;
     }
-  }
-  
-  .appears-with-opacity {
-	    animation: opacity 1s both;
 }
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    70% {
+        opacity: 0.2s;
+    }
+    80% {
+        opacity: 0.3s;
+    }
+    90% {
+        opacity: 0.5s;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+  
+  
 
 @media (min-width: $big-smartphone) {
     /*  Presentation du site    */

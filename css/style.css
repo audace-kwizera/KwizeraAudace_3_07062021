@@ -204,8 +204,8 @@ figcaption {
   width: 100%;
   background-attachment: #F2F2F2;
   background-color: #F2F2F2;
-  -webkit-animation: chargement 2200ms linear;
-          animation: chargement 2200ms linear;
+  -webkit-animation: chargement 1900ms linear;
+          animation: chargement 1900ms linear;
   z-index: 10;
   visibility: hidden;
 }
@@ -600,12 +600,18 @@ header {
   width: auto;
   height: 3.2rem;
   border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: slide-down 4000ms;
+          animation: slide-down 4000ms;
 }
 
 .menu__btn:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: white;
+  -webkit-transform: scale(1.1) rotate(10deg);
+          transform: scale(1.1) rotate(10deg);
 }
 
 .menu__btn:hover .menu__transition__selection {
@@ -805,9 +811,54 @@ header {
   }
 }
 
-.appears-with-opacity {
-  -webkit-animation: opacity 1s both;
-          animation: opacity 1s both;
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.2s;
+  }
+  80% {
+    opacity: 0.3s;
+  }
+  90% {
+    opacity: 0.5s;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.2s;
+  }
+  80% {
+    opacity: 0.3s;
+  }
+  90% {
+    opacity: 0.5s;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 540px) {
