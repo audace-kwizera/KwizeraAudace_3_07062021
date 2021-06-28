@@ -69,8 +69,8 @@
         padding: 0 2rem;
         margin: 0.1rem 0.5rem;
         border-radius: 30px;
+        transition: 0.5s;
         &:hover {
-            transition: 0.5s;
             background: white;
         }
     }
@@ -93,6 +93,9 @@
     &__description__container {
         display: flex;
         justify-content: space-between;
+    }
+    &__carte__photo {
+        position: relative;
     }
 }
 
@@ -142,13 +145,12 @@
         height: 3.2rem;
         border-radius: 25px;
         transition: 0.5s;
-        animation: slide-down 4000ms;
         &:hover {
-            transition: 0.5s;
             background: white;
-            transform: scale(1.1) rotate(10deg);
         }
-
+        &:hover .menu__transition {
+            width: 75%;
+        }
         &:hover .menu__transition__selection {
             @include flex_row_center_align_center; 
             animation: slide-left 0.4s ease;
@@ -158,6 +160,15 @@
         &:hover .menu__prix { 
             transition: 0.4s ease;
         }
+    }
+    &__btn:nth-child(1) {
+        animation: slide-down 4000ms;
+    }
+    &__btn:nth-child(2) {
+        animation: slide-down 4250ms;
+    }
+    &__btn:nth-child(3) {
+        animation: slide-down 4500ms;
     }
 
     &__lien {
@@ -361,6 +372,9 @@
                 width: 30px;
             }
         }
+        &__transition__selection {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -407,6 +421,9 @@
             height: 4rem;
             width: 50%;
             margin: 10% 25%;
+        }
+        &__transition__selection {
+            font-size: 2.5rem;
         }
     }
 }
@@ -505,6 +522,10 @@
             height: 4rem;
             width: 30%;
             margin: 10% 35%;
+        }
+
+        &__transition__selection {
+            font-size: 2rem;
         }
     }
 }

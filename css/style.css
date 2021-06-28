@@ -202,7 +202,6 @@ figcaption {
   margin: auto;
   height: 100%;
   width: 100%;
-  background-attachment: #F2F2F2;
   background-color: #F2F2F2;
   -webkit-animation: chargement 1900ms linear;
           animation: chargement 1900ms linear;
@@ -506,11 +505,11 @@ header {
   padding: 0 2rem;
   margin: 0.1rem 0.5rem;
   border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fonctionnement__btn:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   background: white;
 }
 
@@ -536,6 +535,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.restaurant__carte__photo {
+  position: relative;
 }
 
 .restaurant__section {
@@ -602,16 +605,14 @@ header {
   border-radius: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: slide-down 4000ms;
-          animation: slide-down 4000ms;
 }
 
 .menu__btn:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   background: white;
-  -webkit-transform: scale(1.1) rotate(10deg);
-          transform: scale(1.1) rotate(10deg);
+}
+
+.menu__btn:hover .menu__transition {
+  width: 75%;
 }
 
 .menu__btn:hover .menu__transition__selection {
@@ -633,6 +634,21 @@ header {
 .menu__btn:hover .menu__prix {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+.menu__btn:nth-child(1) {
+  -webkit-animation: slide-down 4000ms;
+          animation: slide-down 4000ms;
+}
+
+.menu__btn:nth-child(2) {
+  -webkit-animation: slide-down 4250ms;
+          animation: slide-down 4250ms;
+}
+
+.menu__btn:nth-child(3) {
+  -webkit-animation: slide-down 4500ms;
+          animation: slide-down 4500ms;
 }
 
 .menu__lien {
@@ -932,6 +948,9 @@ header {
   .menu__partie__restaurant h3 {
     width: 30px;
   }
+  .menu__transition__selection {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -964,6 +983,9 @@ header {
     height: 4rem;
     width: 50%;
     margin: 10% 25%;
+  }
+  .menu__transition__selection {
+    font-size: 2.5rem;
   }
 }
 
@@ -1046,6 +1068,9 @@ header {
     height: 4rem;
     width: 30%;
     margin: 10% 35%;
+  }
+  .menu__transition__selection {
+    font-size: 2rem;
   }
 }
 
