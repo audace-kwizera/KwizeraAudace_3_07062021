@@ -83,7 +83,7 @@ a {
 
 @media (min-width: 1400px) {
   .slider__pages__restaurants {
-    height: 42rem;
+    height: 22rem;
   }
 }
 
@@ -795,20 +795,12 @@ header {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
   }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
 }
 
 @keyframes slide-left {
   0% {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
   }
 }
 
@@ -840,13 +832,13 @@ header {
     opacity: 0.1;
   }
   70% {
-    opacity: 0.2s;
+    opacity: 0.2;
   }
   80% {
-    opacity: 0.3s;
+    opacity: 0.3;
   }
   90% {
-    opacity: 0.5s;
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -865,13 +857,13 @@ header {
     opacity: 0.1;
   }
   70% {
-    opacity: 0.2s;
+    opacity: 0.2;
   }
   80% {
-    opacity: 0.3s;
+    opacity: 0.3;
   }
   90% {
-    opacity: 0.5s;
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -1038,6 +1030,9 @@ header {
     width: 30%;
   }
   /*  Partie Menu    */
+  .menu__partie__restaurant h3 {
+    margin: 1rem;
+  }
   .menu__restaurant__nom h2 {
     text-align: center;
   }
