@@ -71,13 +71,13 @@ a {
 
 @media (min-width: 768px) {
   .slider__pages__restaurants {
-    height: 33rem;
+    height: 18rem;
   }
 }
 
 @media (min-width: 950px) {
   .slider__pages__restaurants {
-    height: 40rem;
+    height: 18rem;
   }
 }
 
@@ -880,7 +880,6 @@ header {
   }
 }
 
-/** Big smartphone  + 540px */
 @media (min-width: 540px) {
   /*  Presentation du site    */
   .slider__bouton {
@@ -958,6 +957,9 @@ header {
   .menu__transition__selection {
     font-size: 1.5rem;
   }
+  .menu__description h4, .menu p {
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -972,6 +974,9 @@ header {
     padding: 0 1.6rem;
   }
   /*  Partie Menu    */
+  .menu__partie__restaurant {
+    margin: 0;
+  }
   .menu__btn {
     height: 5rem;
     margin: 0.6rem 0;
@@ -1033,9 +1038,6 @@ header {
     width: 30%;
   }
   /*  Partie Menu    */
-  .menu__partie__restaurant h3 {
-    margin: 3rem;
-  }
   .menu__restaurant__nom h2 {
     text-align: center;
   }

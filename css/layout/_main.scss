@@ -302,9 +302,6 @@
         opacity: 1;
     }
 }
-
-
-/** Big smartphone  + 540px */
   
 
 @media (min-width: $big-smartphone) {
@@ -382,6 +379,9 @@
         &__transition__selection {
             font-size: 1.5rem;
         }
+        &__description h4, p {
+            font-size: 0.7rem;
+        }
     }
 }
 
@@ -403,6 +403,9 @@
     
 /*  Partie Menu    */
     .menu {
+        &__partie__restaurant {
+            margin: 0;
+        }
         &__btn {
             height: 5rem;
             margin: 0.6rem 0;
@@ -485,13 +488,6 @@
 /*  Partie Menu    */
 
     .menu {
-
-        &__partie__restaurant {
-            & h3 {
-                margin: 3rem;
-            }
-        }
-
         &__restaurant__nom {
             & h2 {
                 text-align: center;
