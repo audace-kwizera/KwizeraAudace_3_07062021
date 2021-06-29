@@ -69,12 +69,6 @@ a {
      object-fit: cover;
 }
 
-@media (min-width: 540px) {
-  .slider__pages__restaurants {
-    height: 25rem;
-  }
-}
-
 @media (min-width: 768px) {
   .slider__pages__restaurants {
     height: 33rem;
@@ -371,6 +365,10 @@ header {
   text-align: center;
 }
 
+.logo__header img {
+  width: 8rem;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,7 +600,7 @@ header {
   margin: 0.4rem 0;
   width: auto;
   height: 3.2rem;
-  border-radius: 25px;
+  border-radius: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -625,30 +623,35 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slide-left 0.4s ease;
-          animation: slide-left 0.4s ease;
+  -webkit-animation: slide-left 0.3s ease;
+          animation: slide-left 0.3s ease;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
 .menu__btn:hover .menu__prix {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .menu__btn:nth-child(1) {
-  -webkit-animation: slide-down 4000ms;
-          animation: slide-down 4000ms;
+  -webkit-animation: slide-down 1500ms;
+          animation: slide-down 1500ms;
 }
 
 .menu__btn:nth-child(2) {
-  -webkit-animation: slide-down 4250ms;
-          animation: slide-down 4250ms;
+  -webkit-animation: slide-down 1700ms;
+          animation: slide-down 1700ms;
 }
 
 .menu__btn:nth-child(3) {
-  -webkit-animation: slide-down 4500ms;
-          animation: slide-down 4500ms;
+  -webkit-animation: slide-down 1900ms;
+          animation: slide-down 1900ms;
+}
+
+.menu__btn:nth-child(4) {
+  -webkit-animation: slide-down 2100ms;
+          animation: slide-down 2100ms;
 }
 
 .menu__lien {
@@ -686,7 +689,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 15px 15px 0;
 }
 
 .menu__description {
@@ -877,6 +880,7 @@ header {
   }
 }
 
+/** Big smartphone  + 540px */
 @media (min-width: 540px) {
   /*  Presentation du site    */
   .slider__bouton {
@@ -914,6 +918,9 @@ header {
   .fonctionnement__btn {
     padding: 0 1.5rem;
   }
+  .fonctionnement__btn svg {
+    margin: 1rem;
+  }
   .fonctionnement__icone {
     margin: 1rem;
   }
@@ -935,10 +942,10 @@ header {
         flex-wrap: wrap;
   }
   .restaurant__section a {
-    width: 40%;
+    width: 45%;
   }
-  .restaurant__carte__photo__mention__nouveaute {
-    margin: 1rem 3rem;
+  .restaurant__info h3, .restaurant p {
+    font-size: 1.05rem;
   }
   /*  Partie Menu    */
   .menu {

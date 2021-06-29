@@ -16,6 +16,9 @@ header {
 .logo__header {
     width: 100%;
     text-align: center;
+    & img {
+        width: 8rem;
+    }
 }
 
 

@@ -143,7 +143,7 @@
         margin: 0.4rem 0;
         width: auto;
         height: 3.2rem;
-        border-radius: 25px;
+        border-radius: 15px;
         transition: 0.5s;
         &:hover {
             background: white;
@@ -153,22 +153,25 @@
         }
         &:hover .menu__transition__selection {
             @include flex_row_center_align_center; 
-            animation: slide-left 0.4s ease;
+            animation: slide-left 0.3s ease;
             transform-origin: right;
         }
 
         &:hover .menu__prix { 
-            transition: 0.4s ease;
+            transition: 0.3s ease;
         }
     }
     &__btn:nth-child(1) {
-        animation: slide-down 4000ms;
+        animation: slide-down 1500ms;
     }
     &__btn:nth-child(2) {
-        animation: slide-down 4250ms;
+        animation: slide-down 1700ms;
     }
     &__btn:nth-child(3) {
-        animation: slide-down 4500ms;
+        animation: slide-down 1900ms;
+    }
+    &__btn:nth-child(4) {
+        animation: slide-down 2100ms;
     }
 
     &__lien {
@@ -189,7 +192,7 @@
             display: none;
             width: 25%;
             align-items: center;
-            border-radius: 0 25px 25px 0;
+            border-radius: 0 15px 15px 0;
         }
     }
 
@@ -300,7 +303,8 @@
     }
 }
 
-  
+
+/** Big smartphone  + 540px */
   
 
 @media (min-width: $big-smartphone) {
@@ -339,6 +343,9 @@
 
         &__btn {
             padding: 0 1.5rem;
+            & svg {
+                margin: 1rem;
+            }
         }
 
         &__icone {
@@ -354,12 +361,12 @@
             @include flex_row_space_around;
             flex-wrap: wrap;
             & a {
-                width: 40%;
+                width: 45%;
             }
         }
 
-        &__carte__photo__mention__nouveaute {
-            margin: 1rem 3rem;
+        &__info h3, p {
+            font-size: 1.05rem;
         }
     }
 
