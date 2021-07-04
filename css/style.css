@@ -175,8 +175,8 @@ figcaption {
 }
 
 .favoris__icone__pleine:hover {
-  -webkit-animation: opacitycoeur 250ms;
-          animation: opacitycoeur 250ms;
+  -webkit-animation: opacitycoeur 350ms;
+          animation: opacitycoeur 350ms;
   opacity: 1;
 }
 
