@@ -1,45 +1,49 @@
 .favoris {
-    display: flex;
-    padding-bottom: 1.5rem;
-    align-self: center;
-    font-size: 1.5rem;
-    justify-content: flex-end;
-    &__icone {
-        position: absolute;
-        &__vide {
+        display: flex;
+        padding-bottom: 1.5rem;
+        align-self: center;
+        font-size: 1.5rem;
+        justify-content: flex-end;
+        svg {
+            height: 1em;
+            width: 1em;
+            font-size: 30px;
             position: absolute;
+            right: 10px;
+            @media (min-width: 768px) {
+                right: 50px;
+            }
         }
-
-        &__pleine {
+        .favoris__active {
             position: absolute;
             opacity: 0;
-            color: $primary-color;
-            &:hover {
-                animation: opacitycoeur 350ms;
+        }
+        &:hover {
+            cursor: pointer;
+            animation: favoris 0.5s ease;
+            -webkit-animation: favoris 1s ease;
+            .favoris__active {
                 opacity: 1;
+            }
+            .favoris__inactive {
+                opacity: 0;
             }
         }
     }
-}
 
-@keyframes opacitycoeur {
-    0% {
-        opacity: 0;
+    @keyframes favoris {
+        0% {
+            opacity: 0.1;
+        }
+        40% {
+            opacity: 0.4;
+        }
+        70% {
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    50% {
-        opacity: 0.1;
-    }
-    70% {
-        opacity: 0.2;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    90% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
+    
+    

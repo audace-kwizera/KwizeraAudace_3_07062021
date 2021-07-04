@@ -160,62 +160,63 @@ figcaption {
           justify-content: flex-end;
 }
 
-.favoris__icone {
+.favoris svg {
+  height: 1em;
+  width: 1em;
+  font-size: 30px;
   position: absolute;
+  right: 10px;
 }
 
-.favoris__icone__vide {
-  position: absolute;
+@media (min-width: 768px) {
+  .favoris svg {
+    right: 50px;
+  }
 }
 
-.favoris__icone__pleine {
+.favoris .favoris__active {
   position: absolute;
   opacity: 0;
-  color: #9356DC;
 }
 
-.favoris__icone__pleine:hover {
-  -webkit-animation: opacitycoeur 350ms;
-          animation: opacitycoeur 350ms;
+.favoris:hover {
+  cursor: pointer;
+  animation: favoris 0.5s ease;
+  -webkit-animation: favoris 1s ease;
+}
+
+.favoris:hover .favoris__active {
   opacity: 1;
 }
 
-@-webkit-keyframes opacitycoeur {
+.favoris:hover .favoris__inactive {
+  opacity: 0;
+}
+
+@-webkit-keyframes favoris {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 0.1;
   }
-  70% {
-    opacity: 0.2;
-  }
-  80% {
+  40% {
     opacity: 0.4;
   }
-  90% {
-    opacity: 0.8;
+  70% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
   }
 }
 
-@keyframes opacitycoeur {
+@keyframes favoris {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 0.1;
   }
-  70% {
-    opacity: 0.2;
-  }
-  80% {
+  40% {
     opacity: 0.4;
   }
-  90% {
-    opacity: 0.8;
+  70% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
@@ -555,6 +556,10 @@ header {
   background: #ece1f9;
 }
 
+.fonctionnement__btn:hover svg {
+  color: #9356DC !important;
+}
+
 .fonctionnement__icone {
   margin: 0 10em;
 }
@@ -614,16 +619,6 @@ header {
 .menu h2 {
   font-family: "Shrikhand", cursive;
   width: 95%;
-}
-
-.menu__favoris__icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
 }
 
 .menu__partie__restaurant h3 {
