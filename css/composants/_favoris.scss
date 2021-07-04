@@ -15,9 +15,31 @@
             opacity: 0;
             color: $primary-color;
             &:hover {
+                animation: opacitycoeur 250ms;
                 opacity: 1;
             }
         }
+    }
+}
+
+@keyframes opacitycoeur {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

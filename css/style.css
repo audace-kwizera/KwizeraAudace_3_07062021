@@ -175,7 +175,51 @@ figcaption {
 }
 
 .favoris__icone__pleine:hover {
+  -webkit-animation: opacitycoeur 250ms;
+          animation: opacitycoeur 250ms;
   opacity: 1;
+}
+
+@-webkit-keyframes opacitycoeur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacitycoeur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .chargement {
