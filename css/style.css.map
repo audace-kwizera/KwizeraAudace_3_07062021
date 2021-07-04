@@ -13,8 +13,7 @@
         "composants/_chargement.scss",
         "layout/_header.scss",
         "layout/_main.scss",
-        "layout/_footer.scss",
-        "pages/_acceuil.scss"
+        "layout/_footer.scss"
     ],
     "names": [],
     "file": "style.css"
