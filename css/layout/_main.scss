@@ -119,7 +119,7 @@
         display: flex;
     }
 
-    & h2 {
+    & h1{
         font-family: $police_logo_titre;
         width: 95%;
     }
@@ -127,11 +127,12 @@
     
 
     &__partie__restaurant {
-        & h3 {
+        & h2 {
             color: darken($couleur-clair, 40);
             border-bottom: 2px solid $tertiary-color;
             border-width: 4px;
-            width: 12%;
+            width: 8%;
+            font-size: 1rem;
         }
     }
 
@@ -201,19 +202,19 @@
         color: black;
         overflow: hidden;
         padding: 0.4rem;
-        & h4 {
+        & h3 {
             margin-top: 0.1rem;
             margin-bottom: 0;
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
         & p {
-            margin-top: 0.5rem;
+            margin-top: 0.2rem;
             margin-bottom: 0.1rem;
-            font-size: 0.5rem;
+            font-size: 0.7rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -248,9 +249,17 @@
 
     &__commande {
         @include flex_row_center;
-        margin: 25%;
+        margin: 20%;
         width: 50%;
     }
+}
+
+/*  Partie menu des pages de Restaurant */
+.footer__titre {
+    font-family: $police_logo_titre;
+    width: 95%;
+    color: $couleur-clair;
+    font-size: 1.5rem;
 }
 
 @keyframes rotate {
@@ -267,7 +276,6 @@
               transform: scaleX(0);
     }
   }
-  
  
 @keyframes opacity {
     0% {
@@ -360,7 +368,7 @@
             }
         }
 
-        &__info h3, p {
+        &__info h2, p {
             font-size: 1.05rem;
         }
     }
@@ -370,15 +378,15 @@
         padding: 2rem;
         font-size: 1.2rem;
         &__partie__restaurant {
-            & h3 {
+            & h2 {
                 width: 30px;
             }
         }
         &__transition__selection {
             font-size: 1.5rem;
         }
-        &__description h4, p {
-            font-size: 0.7rem;
+        &__description h3, p {
+            font-size: 0.8rem;
         }
     }
 }
@@ -403,6 +411,9 @@
     .menu {
         &__partie__restaurant {
             margin: 0;
+            & h2 {
+                font-size: 1.2rem;
+            }
         }
         &__btn {
             height: 5rem;
@@ -410,7 +421,7 @@
         }
 
         &__description {
-            & h4 {
+            & h3 {
                 font-size: 1.45rem;
             } 
             & p { 
@@ -488,8 +499,11 @@
     .menu {
 
         &__partie__restaurant {
+            & h2 {
+                font-size: 1.3rem;
+            }
             & h3 {
-                margin: 1rem;
+                margin: 0.5rem 0;
             }
         }
 
@@ -513,9 +527,7 @@
         }
 
         &__description {
-            & h4 {
-                margin-bottom: 1.2rem;
-                font-size: 1.5rem;
+            & h3 {
                 flex-wrap: wrap;
             }
     

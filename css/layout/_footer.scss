@@ -1,11 +1,12 @@
 footer {
     background-color: darken($couleur-clair, 78);
     padding: 1rem;
-    & h4 {
+    & h2 {
         padding: 1rem 0 0 1rem;
         margin: 0;
         color: white;
         font-family: $police_logo_titre;
+        display: flex;
     }
 
     & li, a {
@@ -40,8 +41,9 @@ footer {
 
 @media (min-width: $tablette) {
     footer {
-        & h4 {
+        & h2 {
             text-align: center;
+            justify-content: center;
         }
 
         & ul {
@@ -53,7 +55,7 @@ footer {
             align-self: center;
         }
 
-        & h5 {
+        & h3 {
             margin: 0;
         }
     }

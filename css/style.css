@@ -617,16 +617,17 @@ header {
   display: flex;
 }
 
-.menu h2 {
+.menu h1 {
   font-family: "Shrikhand", cursive;
   width: 95%;
 }
 
-.menu__partie__restaurant h3 {
+.menu__partie__restaurant h2 {
   color: #8c8c8c;
   border-bottom: 2px solid #99E2D0;
   border-width: 4px;
-  width: 12%;
+  width: 8%;
+  font-size: 1rem;
 }
 
 .menu__btn {
@@ -740,19 +741,19 @@ header {
   padding: 0.4rem;
 }
 
-.menu__description h4 {
+.menu__description h3 {
   margin-top: 0.1rem;
   margin-bottom: 0;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .menu__description p {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   margin-bottom: 0.1rem;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -806,8 +807,16 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 25%;
+  margin: 20%;
   width: 50%;
+}
+
+/*  Partie menu des pages de Restaurant */
+.footer__titre {
+  font-family: "Shrikhand", cursive;
+  width: 95%;
+  color: #F2F2F2;
+  font-size: 1.5rem;
 }
 
 @-webkit-keyframes rotate {
@@ -977,7 +986,7 @@ header {
   .restaurant__section a {
     width: 45%;
   }
-  .restaurant__info h3, .restaurant p {
+  .restaurant__info h2, .restaurant p {
     font-size: 1.05rem;
   }
   /*  Partie Menu    */
@@ -985,14 +994,14 @@ header {
     padding: 2rem;
     font-size: 1.2rem;
   }
-  .menu__partie__restaurant h3 {
+  .menu__partie__restaurant h2 {
     width: 30px;
   }
   .menu__transition__selection {
     font-size: 1.5rem;
   }
-  .menu__description h4, .menu p {
-    font-size: 0.7rem;
+  .menu__description h3, .menu p {
+    font-size: 0.8rem;
   }
 }
 
@@ -1011,11 +1020,14 @@ header {
   .menu__partie__restaurant {
     margin: 0;
   }
+  .menu__partie__restaurant h2 {
+    font-size: 1.2rem;
+  }
   .menu__btn {
     height: 5rem;
     margin: 0.6rem 0;
   }
-  .menu__description h4 {
+  .menu__description h3 {
     font-size: 1.45rem;
   }
   .menu__description p {
@@ -1072,8 +1084,11 @@ header {
     width: 30%;
   }
   /*  Partie Menu    */
+  .menu__partie__restaurant h2 {
+    font-size: 1.3rem;
+  }
   .menu__partie__restaurant h3 {
-    margin: 1rem;
+    margin: 0.5rem 0;
   }
   .menu__restaurant__nom h2 {
     text-align: center;
@@ -1098,9 +1113,7 @@ header {
     width: 45%;
     margin: 1rem 0;
   }
-  .menu__description h4 {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
+  .menu__description h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1176,11 +1189,14 @@ footer {
   padding: 1rem;
 }
 
-footer h4 {
+footer h2 {
   padding: 1rem 0 0 1rem;
   margin: 0;
   color: white;
   font-family: "Shrikhand", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer li, footer a {
@@ -1209,8 +1225,11 @@ footer ul {
 }
 
 @media (min-width: 768px) {
-  footer h4 {
+  footer h2 {
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer ul {
     display: -webkit-box;
@@ -1224,7 +1243,7 @@ footer ul {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  footer h5 {
+  footer h3 {
     margin: 0;
   }
 }
