@@ -223,9 +223,11 @@
     &__prix {
         @include flex_row_center;
         width: 30%;
-        align-items: center;
+        align-items: flex-end;
+        padding: 0.4rem;
+        color: black;
         margin: 0;
-        & h5 {
+        & span {
             margin-bottom: 0;
             color: black;
             font-size: 0.7rem;
@@ -417,8 +419,8 @@
         }
 
         &__prix {
-            & h5 {
-                font-size: 1.3rem;
+            & span {
+                font-size: 1.1rem;
             }
         }
 
