@@ -169,12 +169,6 @@ figcaption {
   right: 10px;
 }
 
-@media (min-width: 768px) {
-  .favoris svg {
-    right: 50px;
-  }
-}
-
 .favoris .favoris__active {
   position: absolute;
   opacity: 0;
