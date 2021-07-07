@@ -12,6 +12,7 @@
     border: none;
     &:hover {
         transform: scale(1.02);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
     } 
 
     &__photo__mention__nouveaute{

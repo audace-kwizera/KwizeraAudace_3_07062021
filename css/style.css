@@ -38,6 +38,8 @@ a {
 
 .btn:hover {
   background: #ae80e5;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .slider__pages {
@@ -112,6 +114,8 @@ a {
 .restaurant__carte:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .restaurant__carte__photo__mention__nouveaute {
@@ -548,7 +552,7 @@ header {
 }
 
 .fonctionnement__btn:hover {
-  background: #ece1f9;
+  background: #fafafa;
 }
 
 .fonctionnement__btn:hover svg {
