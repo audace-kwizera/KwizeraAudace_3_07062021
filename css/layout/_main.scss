@@ -71,7 +71,7 @@
         border-radius: 30px;
         transition: 0.5s;
         &:hover {
-            background: lighten($couleur-clair, 3);
+            background: lighten($primary-color, 33);
             svg {
                 color: $primary-color!important;
             }
